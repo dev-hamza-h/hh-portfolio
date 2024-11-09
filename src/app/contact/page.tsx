@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-blue-950 text-white">
+    <div className="flex items-center justify-center min-h-screen  bg-blue-950 text-white">
       {isSubmitted ? (
         <div className="fixed inset-0 bg-white bg-opacity-100 flex flex-col items-center justify-center">
           <div className="text-center">
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col-reverse md:flex-row md:items-start p-8 max-w-6xl mt-10 space-y-8 md:space-y-0 md:space-x-60">
+        <div className="flex flex-col-reverse md:flex-row md:items-start p-8 max-w-6xl mt-10 mb-16 space-y-8 md:space-y-0 md:space-x-60">
           
           {/* Let’s Connect Section - Appears below the form on smaller screens */}
           <div className="w-full md:w-1/3 text-center md:text-left animate-slideFromTop md:mt-32">
@@ -67,7 +67,7 @@ const Contact = () => {
 
           {/* Contact Form - Appears first on smaller screens */}
           <form ref={form} onSubmit={sendEmail} className="w-full md:w-2/3 max-w-lg p-8 rounded-lg">
-            <h2 className="text-3xl font-bold mb-8 text-center animate-slideFromTop">
+            <h2 className="text-3xl font-bold mb-12 text-center animate-slideFromTop">
               <span className="text-white">Contact </span>
               <span className="text-cyan-400">Me</span>
             </h2>

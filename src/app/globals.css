@@ -2,26 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* global.css */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+
+
+ /*Navbar Line K Animated k Liye*/
+.link-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.link-hover::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px; /* لائن کی موٹائی */
+    background: cyan; /* لائن کا رنگ */
+    transition: width 0.3s ease, left 0.3s ease; /* ہور افیکٹ کی ترمیم */
+}
+
+.link-hover:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+ 
+
+
+ 
+  
+/*Profile Image ko left sae Animate karne k liye */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInFromLeft 1s ease-out;
+  }
+  
+
+
+
+
+
+ /*Hero Section k left conetent ko Animate karne k liye*/ 
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%); /* Start from below the screen */
+    }
+    100% {
+      transform: translateY(0); /* End at original position */
+    }
+  }
+  
+  .animate-slideInFromBottom {
+    animation: slideInFromBottom 1s ease-out; /* Duration can be adjusted */
+  }
+  
+
+
+
+
+
+ 
+
+  /* About Content k Loader k liye */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.spin-slow {
+  animation: spin-slow 3s linear infinite; 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+
+
+
+
+/*Techinal Skills ko opar Sae Animate kr k lanae k liye*/
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+.animate-slideFromTop {
+  animation: slideFromTop 0.8s ease-out forwards;
+}
+
+
+
+
+
+
+/*Animate Right sae lanae k liye*/
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInFromRight 1s ease-out;
+}
+
+ 
+
+ 

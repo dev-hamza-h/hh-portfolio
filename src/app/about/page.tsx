@@ -3,8 +3,8 @@ import AboutProfile from "@/assets/profile1.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-950 px-4 sm:px-8 md:px-16 "> 
-      <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-6 flex items-center justify-center ">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-950 px-4 sm:px-8 md:px-16 pt-16 sm:pt-24"> 
+      <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-6 flex items-center justify-center">
         <div className="absolute w-52 h-52 sm:w-64 sm:h-64 border-8 border-t-transparent border-cyan-500 rounded-full spin-slow "></div>
         <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full border-2 border-cyan-300 flex items-center justify-center "> 
           <Image

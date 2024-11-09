@@ -6,7 +6,7 @@ const Education: React.FC = () => {
       <h1 className="text-3xl md:text-4xl font-bold mb-8 mt-16 animate-slideFromTop">
         My <span className="text-cyan-500">Education</span>
       </h1>
-      <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mt-6 relative px-4 sm:px-0 animate-slideInLeft">
+      <div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mt-6 relative px-4 sm:px-0 mb-16 animate-slideInLeft">
         {/* Timeline container */}
         <div className="border-l-4 border-cyan-400 relative">
           {/* Education Block - Right */}

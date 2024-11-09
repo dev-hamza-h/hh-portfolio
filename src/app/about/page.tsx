@@ -22,7 +22,7 @@ const About = () => {
       </h2>
       <p className="text-2xl font-semibold text-white mt-2 animate-slideInFromBottom">Web Developer</p>
 
-      <p className="text-center text-gray-300 mt-4 font-semibold sm:max-w-2xl lg:max-w-4xl mx-auto sm:mx-4 md:mx-8 w-full animate-slideInFromBottom">
+      <p className="text-center text-gray-300 mt-4 font-semibold sm:max-w-2xl lg:max-w-4xl mx-auto sm:mx-4 md:mx-8 w-full mb-24 animate-slideInFromBottom">
         I&apos;m Hamza Hassan, & I&apos;m a student at the Governor Initiative, exploring the dynamic fields of Cloud, Applied Generative AI,
         & Web 3.0 and I&apos;m a passionate web developer who specializes in using modern web technologies to create user-friendly and
         responsive websites and applications. I have expertise in HTML, CSS, JavaScript, TypeScript, React, and Next.js, and I always focus on

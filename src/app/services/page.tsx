@@ -40,7 +40,7 @@ const Services = () => {
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-8 mt-8 sm:mb-12 animate-slideFromTop ">
         My <span className="text-[#0bc1e3]">Services</span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 animate-slideInFromBottom">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-16 mb-12 animate-slideInFromBottom">
         {services.map((service, index) => (
           <div
             key={index}

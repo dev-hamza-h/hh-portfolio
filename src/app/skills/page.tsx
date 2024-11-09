@@ -17,10 +17,10 @@ const Skills = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-blue-950 text-white px-2 sm:px-8">
       <div className="w-full max-w-4xl p-2 sm:p-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8 pt-32 sm:pt-16 animate-slideFromTop">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8 pt-28 sm:pt-16 animate-slideFromTop">
           Technical <span className="text-cyan-500">Skills</span>
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 animate-slideInFromBottom">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-16 mb-16 animate-slideInFromBottom">
           {skillsData.map((skill, index) => (
             <div
               key={index}

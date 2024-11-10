@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
 
         {/* CV Download Button */}
-        <Link href="/Hamza-Hassan.PDF.png" download>
+        <Link href="/GI-AIWMD.pdf" download>
           <button className="mt-12 px-3 py-1.5 lg:px-6 lg:py-3 bg-cyan-500 text-black font-bold rounded-full text-lg shadow-lg hover:bg-cyan-300 inline-flex items-center justify-center">
             DOWNLOAD CV <ArrowDownTrayIcon className="w-5 h-5 mt-1 ml-2" />
           </button>

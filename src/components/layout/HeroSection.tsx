@@ -11,7 +11,7 @@ import profile from "@/assets/profile1.png";
 const Hero = () => {
   return (
     <section className="bg-blue-950 py-28 lg:py-44 flex flex-col lg:flex-row items-center">
-      {/* Profile Image for mobile at top, for desktop on the right */}
+      {/* Profile Image */}
       <div className="lg:w-1/2 flex justify-center mb-12 lg:mb-0 lg:order-2 animate-slideInLeft">
         <div className="relative rounded-full w-48 sm:w-60 md:w-72 lg:w-96 h-48 sm:h-60 md:h-72 lg:h-96 overflow-hidden shadow-[0_8px_48px_rgba(0,255,255,0.9)] shadow-cyan-500 animate-pulse">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-700 to-fuchsia-700 rounded-full" />
@@ -61,9 +61,13 @@ const Hero = () => {
             </div>
           </Link>
         </div>
-        <button className="mt-12 px-3 py-1.5 lg:px-6 lg:py-3 bg-cyan-500 text-black font-bold rounded-full text-lg shadow-lg hover:bg-cyan-300 inline-flex items-center justify-center">
-          DOWNLOAD CV <ArrowDownTrayIcon className="w-5 h-5 mt-1 ml-2" />
-        </button>
+
+        {/* CV Download Button */}
+        <Link href="/Hamza-Hassan.PDF.png" download>
+          <button className="mt-12 px-3 py-1.5 lg:px-6 lg:py-3 bg-cyan-500 text-black font-bold rounded-full text-lg shadow-lg hover:bg-cyan-300 inline-flex items-center justify-center">
+            DOWNLOAD CV <ArrowDownTrayIcon className="w-5 h-5 mt-1 ml-2" />
+          </button>
+        </Link>
       </div>
     </section>
   );
